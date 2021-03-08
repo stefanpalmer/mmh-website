@@ -1,5 +1,5 @@
 
-/*========== ABOUT PAGE ARROWS ==========*/
+/*========== ARTICLES PAGE ARROWS ==========*/
 let upArrow = document.getElementById('a-up');
 let downArrow = document.getElementById('a-down');
 

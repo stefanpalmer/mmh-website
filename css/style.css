@@ -5,24 +5,12 @@ html {
     padding: env(safe-area-inset);
 }
 
-/* Navbar image, home buttons, image footer for fold */
-
 /* Prevent Horizontal Scrolling & Font Style */
 html, body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     color: #505962;
 }
-
-/* .offset {
-    top: 120px;
-    bottom: 0px;
-    padding: 45px 0px 25px 0px;
-}
-  
-.offset h1 {
-    margin-top: 20px;
-} */
 
 /*================================================================
                             NAVIGATION:
@@ -67,7 +55,6 @@ html, body {
     font-size: 1.8rem;
 }
 
-
 @media (max-width: 62rem) {
     
     #navbarResponsive ul {
@@ -81,25 +68,21 @@ html, body {
     .navbar-brand img {
         margin-left: .5rem;
     }
-}
-
-@media (max-width: 20rem) {
 
 }
-
 
 /*================================================================
                             SHARED:
 ================================================================*/
 
-/* Remove Outline When Clicked */
+/* Remove outline when clicked */
 button:focus, a:focus {
     outline: 0;
     -webkit-appearance: none;
     box-shadow: none;
 }
 
-/* Ease button transition */
+/* Ease button and link transition */
 button, a, a.btn {
     transition: all .6s ease;
 }
@@ -108,7 +91,7 @@ button, a, a.btn {
     color: white;
     font-size: 1.1rem;
     margin-top: 1.5rem;
-    position: absolute;
+    position: relative;
 }
 
 .btn-full:hover {
@@ -222,10 +205,6 @@ button, a, a.btn {
                             ABOUT:
 ================================================================*/
 
-#about {
-    
-}
-
 #about-image {
     /* Background image properties */
     background-image: url('../img/sunset.jpg');
@@ -240,17 +219,12 @@ button, a, a.btn {
     /* Diagonal border */
     border-left: 7rem solid #fff;
     border-top: 100vh solid transparent;
-    /* IOS 3D rendering */
-    /* -webkit-transform: translateZ(0); */
-    /* transform: translateZ(0); */
-    /* will-change: transform; */
 }
 
 .img-container {
     margin: 0rem;
     padding: 0rem;
 }
-
 
 #about-content-box {
     float: left;
@@ -268,7 +242,6 @@ button, a, a.btn {
 #about-inner {
     display: table-cell;
     vertical-align: middle;
-    /* margin: auto; */
 }
 
 #about-title {
@@ -286,20 +259,13 @@ button, a, a.btn {
     line-height: 2.1;
 }
 
-/* About buttons */
-#btn-about-obj {
-    position: relative;
-    /* left: 3%; */
-}
-
 #btn-about-proj {
-    position: relative;
     left: 10%;
-    /* left: 45%; */
 }
 
 
 @media (max-width: 62rem) {
+
     #about-image {
         background-size: cover;
         background-position: 40% 70%;
@@ -312,31 +278,12 @@ button, a, a.btn {
     
     #about-content-box {
         height: 50vh;
-        /* position: relative; */
     }
 
-    #btn-about-obj {
-        /* left: 2%; */
-    }
-
-    #btn-about-proj {
-        /* left: 20%; */
-    }
-}
-
-@media (max-width: 48rem) {
-    #btn-about-proj {
-        /* left: 30%; */
-    }
-}
-
-@media (max-width: 26rem) {
-    #btn-about-proj {
-        /* left: 40%; */
-    }
 }
 
 @media (max-width: 21rem) {
+
     #about-content-box {
         margin: 2rem auto;
         /* padding-bottom: 10rem; */
@@ -351,6 +298,7 @@ button, a, a.btn {
         position: relative;
         left: 0%;
     }
+
 }
 
 /*================================================================
@@ -361,20 +309,13 @@ button, a, a.btn {
     height: 100vh;
 }
 
-#obj-img {
-    /* background: rgba(236, 29, 37); */
-}
-
-#objectives-container {
-    /* background: rgba(163, 14, 19, 0.9); */
-    /* color: white; */
-    /* height: 20rem; */
-    margin-top: 2.0rem;
-}
-
 #volunteer-img {
     height: 37rem;
     margin-top: 2rem;
+}
+
+#objectives-container {
+    margin-top: 2.0rem;
 }
 
 #objectives-container h3 {
@@ -393,17 +334,15 @@ button, a, a.btn {
 }
 
 #btn-obj-proj {
-    position: relative;
     left: 7%;
 }
 
 #btn-obj-contact {
-    position: relative;
     left: 15%;
 }
 
-/* 1024px - 64rem */
 @media (max-width: 62rem) {
+
     #objectives {
         height: 65rem;
     }
@@ -416,12 +355,10 @@ button, a, a.btn {
         height: 25rem;
         margin-top: 3.6rem;
     }
+
 }
 
 @media (max-width: 48rem) {
-    #volunteer-img {
-        
-    }
 
     #objectives-container h3 {
         margin-top: 0rem;
@@ -430,6 +367,7 @@ button, a, a.btn {
     #objectives-container li {
         line-height: 1.5;
     }
+
 }
 
 @media (max-width: 31rem) {
@@ -486,7 +424,6 @@ button, a, a.btn {
 
 .proj-text ul a {
     color: rgb(250,29,37);
-    /* font-style: italic; */
     font-size: 1.05rem;
 }
 
@@ -496,10 +433,10 @@ button, a, a.btn {
     text-decoration: none;
 }
 
-
 /*================================================================
                             ARTICLES:
 ================================================================*/
+
 #other-title {
     color: rgb(236,29,37);
     font-size: 2rem;
@@ -528,8 +465,6 @@ button, a, a.btn {
 
 .blankets-img {
     height: 13rem;
-    /* width: 17rem; */
-    /* margin-right: 1.2rem; */
 }
 
 #shipment-underline {
@@ -647,10 +582,7 @@ button, a, a.btn {
     #recital-img {
         height: 20rem;
     }
-}
 
-@media (max-width: 48rem) {
-    
 }
 
 @media (max-width: 36rem) {
@@ -690,6 +622,7 @@ button, a, a.btn {
     #recital-img {
         height: 13rem;
     }
+
 }
 
 /*================================================================
@@ -723,6 +656,7 @@ button, a, a.btn {
 /*================================================================
                             FOOTER:
 ================================================================*/
+
 #top-scroll {
     border-color: rgb(236,29,37);
     color: rgb(236,29,37);
@@ -747,7 +681,6 @@ button, a, a.btn {
 }
 
 #top-scroll:focus {
-    /* text-decoration: none; */
     color: rgb(236,29,37);
     outline: 0;
     -webkit-appearance: none;
@@ -766,14 +699,9 @@ button, a, a.btn {
     margin-bottom: 1.1rem;
 }
 
-
 #contact h4 {
     letter-spacing: 0.05rem;
     color: white;
-}
-
-#contact h4 span {
-    /* color: rgb(236,29,37); */
 }
 
 #contact p {
@@ -799,10 +727,6 @@ button, a, a.btn {
     line-height: 0.8rem;
 }
 
-#success-msg p {
-    /* color: green; */
-}
-
 #btn-contact {
     color: white;
     border-width: 0.07rem;
@@ -813,7 +737,6 @@ button, a, a.btn {
 #btn-contact:hover {
     color: rgb(236,29,37);
     border-color: rgb(236,29,37);
-    /* font-size: 1.1rem; */
 }
 
 @media (max-width: 48rem) {
@@ -834,72 +757,3 @@ button, a, a.btn {
         height: 6rem;
     }
 }
-
-
-
-/* 
-footer {
-  background-color: #41464b;
-  padding-top: 30px;
-  border-top: 5px solid rgba(0,0,0,0.1);
-}
-
-#contact-left h3 {
-  color: #fff;
-  font-size: 23px;
-  margin-bottom: 30px;
-  font-family: 'Lobster', cursive;
-}
-
-#contact-right h3 {
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: 30px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-#contact-left p {
-  color: #fff;
-  margin-bottom: 40px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-address p strong,
-#phone-fax-email strong {
-  letter-spacing: 1px;
-}
-
-form .form-control {
-  background: transparent;
-  border-radius: 0;
-  border-color: #fff;
-  margin-bottom: 17px;
-  font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: .5px;
-  color: #fff;
-}
-
-#home {
-    height: 100%;
-}
-
-#background-sky {
-    height: 100%;
-    background-image: url("../img/seagulls.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#container-title-mmh {
-    width: 100%;
-    height: 100%;
-    display: table;
-}
-
-#title-mmh {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-} */
