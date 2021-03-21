@@ -26,7 +26,8 @@ $(function () {
 /*========== ANIMATE ON SCROLL ==========*/
 AOS.init({
     offset: 300,
-    duration: 700
+    duration: 700,
+    once: true
 });
 
 /*========== LIGHTBOX ==========*/

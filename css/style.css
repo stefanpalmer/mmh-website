@@ -194,7 +194,6 @@ button, a, a.btn {
     }
 }
 
-
 @media (max-width: 19.5rem) {
     .btn-home {
         font-size: 85%;
@@ -263,7 +262,6 @@ button, a, a.btn {
     left: 10%;
 }
 
-
 @media (max-width: 62rem) {
 
     #about-image {
@@ -282,23 +280,31 @@ button, a, a.btn {
 
 }
 
-@media (max-width: 21rem) {
+@media (max-width: 23.5rem) {
 
     #about-content-box {
         margin: 2rem auto;
-        /* padding-bottom: 10rem; */
     }
-
+    
+    #about-content-box .btn-full {
+        margin-top: 0.6rem;
+    }
+    
     #btn-about-obj {
-        position: relative;
         left: 0%;
     }
-
+    
     #btn-about-proj {
-        position: relative;
-        left: 0%;
+        left: 2%;
     }
 
+}
+
+@media (max-width: 21rem) {
+    #about-description {
+        font-size: 1.1rem;
+        line-height: 1.9;
+    }
 }
 
 /*================================================================
@@ -306,16 +312,21 @@ button, a, a.btn {
 ================================================================*/
 
 #objectives {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+#obj-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #volunteer-img {
-    height: 37rem;
-    margin-top: 2rem;
+    width: 50%;
 }
 
 #objectives-container {
-    margin-top: 2.0rem;
+    margin: 2rem 0rem;
+    width: 50%;
 }
 
 #objectives-container h3 {
@@ -341,45 +352,24 @@ button, a, a.btn {
     left: 15%;
 }
 
-@media (max-width: 62rem) {
-
-    #objectives {
-        height: 65rem;
-    }
-
-    #volunteer-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0.1rem;
-        height: 25rem;
-        margin-top: 3.6rem;
-    }
-
-}
-
 @media (max-width: 48rem) {
 
-    #objectives-container h3 {
-        margin-top: 0rem;
+    #obj-wrap {
+        flex-direction: column-reverse;
     }
 
-    #objectives-container li {
-        line-height: 1.5;
-    }
-
-}
-
-@media (max-width: 31rem) {
-    #objectives {
-        height: 70rem;
-    }
-}
-
-@media (max-width: 25rem) {
     #volunteer-img {
-        height: 20rem;
+        width: 70%;
+        height: 30%;
+        margin: auto;
     }
+
+    #objectives-container {
+        width: 100%;
+        height: 70%;
+        margin-bottom: 0;
+    }
+
 }
 
 /*================================================================
@@ -392,7 +382,6 @@ button, a, a.btn {
 
 #projects-title {
     margin-top: 1.85rem;
-    padding-top: 2rem;
     text-align: center;
 }
 
@@ -651,6 +640,12 @@ button, a, a.btn {
 .portfolio-item img:hover {
     transform: scale(1.1);
     cursor: zoom-in;
+}
+
+@media (max-width: 48rem) {
+    #photos .container-fluid {
+        margin-bottom: 8rem;
+    }
 }
 
 /*================================================================
