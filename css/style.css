@@ -103,6 +103,10 @@ button, a, a.btn {
     height: 0.15rem;
 }
 
+.red-text {
+    color: rgb(236,29,37);
+}
+
 /*================================================================
                             HOME:
 ================================================================*/
@@ -330,10 +334,13 @@ button, a, a.btn {
 #obj-wrap {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #volunteer-img {
     width: 50%;
+    height: 100%;
 }
 
 #objectives-container {

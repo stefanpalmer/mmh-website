@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <!-- Animate on Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/mmhlogo.png">
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Font Awesome -->
@@ -60,28 +61,6 @@
       </div>
     </div>
   </nav>
-
-<!-- Home Page -->
-<!-- <section id="home"> -->
-  <!-- Landing Page Image -->
-  <!-- <div id="landing">
-    <div id="home-wrap">
-      <div id="home-inner">
-      </div>
-    </div>
-  </div> -->
-  <!-- Landing Page Buttons -->
-  <!-- <div>
-    <a href="#about" class="btn btn-lg btn-outline-danger btn-home" id="btn-home-about">OUR STORY</a>
-    <a href="#contact" class="btn btn-lg btn-outline-danger btn-home" id="btn-home-involved">GET INVOLVED</a>
-  </div> -->
-  <!-- Bounce Down Arrow -->
-  <!-- <a href="#about" class="down-arrow text-center">
-    <div class="d-none d-md-block" id="arrow">
-      <i class="fa fa-angle-down" aria-hidden="true"></i>
-    </div>
-  </a>
-</section> -->
 
 <!-- Home Page -->
 <section id="home">
@@ -371,6 +350,45 @@
 </section>
 
 <!-- Contact Page -->
+
+<?php
+
+$msg = '';
+$msgClass = '';
+
+if(filter_has_var(INPUT_POST, 'submit')){
+
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $message = htmlspecialchars($_POST['message']);
+  
+  if(!empty($email) && !empty($name) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+      $msg = 'Not a valid email address';
+      $msgClass = 'alert-danger';
+    } else {
+      $toEmail = 'contact@mmhumanity.com';
+      $subject = 'Contact Request From ' . $name;
+      $body = "You have received an email from " .$name.":\r\n".$message;
+      $headers = "MIME-Version: 1.0" . "\r\n" . "Content-Type:text/html;charset=UTF-8" . "\r\n"
+      . "From: " .$name . "<" .$email . ">" . "\r\n";
+
+      if(mail($toEmail, $subject, $body, $headers)) {
+        $msg = 'Message has been sent';
+        $msgClass = 'alert-success';
+      } else {
+        $msg = 'Message was not sent';
+        $msgClass = 'alert-danger';
+      }
+    }
+  } else {
+    $msg= 'Please fill in all fields';
+    $msgClass = 'alert-danger';
+  }
+}
+
+?>
+
 <section id="contact">
   <div class="container">
     <div class="row">
@@ -386,17 +404,22 @@
       </div>
       <div class="col-md-6">
         <div id="contact-right">
-          <h4>Contact Us</h4>
-          <form method="post" id="contact-form" action="contact.php">
-            <div id="error-msg"></div>
-            <div id="success-msg"></div>
-            <input type="text" id="full-name" name="full-name" placeholder="Full Name" class="form-control f-contact">
-            <input type="text" id="email" name="email" placeholder="Email" class="form-control f-contact">
-            <textarea id="message" name="message" placeholder="Message..." rows="5" class="form-control f-contact"></textarea>
+          <?php if($msg != ''): ?>
+            <div class="alert <?php echo $msgClass;?>"><?php echo $msg;?></div>
+          <?php endif; ?>
+          <h4>Contact Us <span style="color: red;"></span></h4>
+          <form method="post" id="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <input type="text" id="name" name="name" placeholder="Full Name" class="form-control f-contact" 
+            value="<?php echo isset($_POST["name"]) ? $name : '';?>">
+            <input type="text" id="email" name="email" placeholder="Email" class="form-control f-contact" 
+            value="<?php echo isset($_POST["email"]) ? $email : '';?>">
+            <textarea id="message" name="message" placeholder="Message" rows="5" class="form-control f-contact" 
+            value="<?php echo isset($_POST["message"]) ? $message : '';?>"></textarea>
             <button type="submit" name="submit" class="btn" id="btn-contact">SEND</button>
           </form>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
@@ -407,11 +430,11 @@
 </a>
 
 <!-- Script Files -->
-<script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="script.js"></script>
-
+<script>AOS.init({disable: 'phone', offset: 300, duration: 700, once: true});</script>
 </body>
 </html>
