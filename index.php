@@ -235,112 +235,112 @@
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img1.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img1.jpg" class="image-link" data-lightbox="gallery-set" data-title="Children with donated books">
             <img src="img/gallery/gallery-img1.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img2.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img2.jpg" class="image-link" data-lightbox="gallery-set" data-title="Children with donated books">
             <img src="img/gallery/gallery-img2.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img3.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img3.jpg" class="image-link" data-lightbox="gallery-set" data-title="Children with donated books">
             <img src="img/gallery/gallery-img3.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img4.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img4.jpg" class="image-link" data-lightbox="gallery-set" data-title="Presentation to students">
             <img src="img/gallery/gallery-img4.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img5.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img5.jpg" class="image-link" data-lightbox="gallery-set" data-title="Yuruk girl">
             <img src="img/gallery/gallery-img5.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img6.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img6.jpg" class="image-link" data-lightbox="gallery-set" data-title="Yuruk girls in classroom">
             <img src="img/gallery/gallery-img6.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img7.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img7.jpg" class="image-link" data-lightbox="gallery-set" data-title="After class">
             <img src="img/gallery/gallery-img7.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img8.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img8.jpg" class="image-link" data-lightbox="gallery-set" data-title="Creating art">
             <img src="img/gallery/gallery-img8.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img9.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img9.jpg" class="image-link" data-lightbox="gallery-set" data-title="Orthopedic hospital">
             <img src="img/gallery/gallery-img9.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img10.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img10.jpg" class="image-link" data-lightbox="gallery-set" data-title="Orthopedic hospital">
             <img src="img/gallery/gallery-img10.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img11.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img11.jpg" class="image-link" data-lightbox="gallery-set" data-title="Orthopedic hospital">
             <img src="img/gallery/gallery-img11.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img12.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img12.jpg" class="image-link" data-lightbox="gallery-set" data-title="Orthopedic hospital">
             <img src="img/gallery/gallery-img12.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img13.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img13.jpg" class="image-link" data-lightbox="gallery-set" data-title="Presenting about MMH">
             <img src="img/gallery/gallery-img13.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img14.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img14.jpg" class="image-link" data-lightbox="gallery-set" data-title="Presenting about MMH">
             <img src="img/gallery/gallery-img14.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img15.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img15.jpg" class="image-link" data-lightbox="gallery-set" data-title="Project planning">
             <img src="img/gallery/gallery-img15.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 p-0">
         <div class="portfolio-item overflow-hidden">
-          <a href="img/gallery/gallery-img16.jpg" class="image-link" data-lightbox="gallery-set" data-title="Image Description">
+          <a href="img/gallery/gallery-img16.jpg" class="image-link" data-lightbox="gallery-set" data-title="Macedonian stand at international night">
             <img src="img/gallery/gallery-img16.jpg" alt="gallery image" class="expanded-image w-100">
           </a>
         </div>
